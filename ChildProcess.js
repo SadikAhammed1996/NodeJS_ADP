@@ -48,5 +48,5 @@ const postResponse = await fetch('https://interview.adpeai.com/api/v2/submit-tas
 process.send(
   `${name} is the highest earner of the year 2021 with an amount of ${amount} and the alpha transaction Ids of ${name} are:
   ${alphaIds}
-  Post call response - ${postResponse}`
+  Post call response - ${postResponse.status}`
 );
