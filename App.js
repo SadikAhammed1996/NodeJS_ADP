@@ -18,7 +18,6 @@ http
 
     //listening to the message from the process which was sent in ChildProcess.js.
     child.on('message', (data) => {
-        res.setHeader('Content-Type', 'application/json');
         res.write(data);
         res.end();
     });
