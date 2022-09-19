@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 //Creating and listening to the server
 http
-  .createServer(async (req, res) => {
+  .createServer((req, res) => {
     //Accepting all the origins and https methods to avoid CORS issues
     cors({
       origin: '*',
